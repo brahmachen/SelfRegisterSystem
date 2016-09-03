@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="使用说明"
+            android:textColor="#ff0000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="      1、首次登陆，为了保证账户的安全，请先修改密码。\n
+      2、确认报到的同学请按照导航栏选项的顺序完善信息。\n
+      3、点击“查看基本信息”的选项，可以查看自己的基本信息，该页面的信息不能修改，如果有错误，请及时与学校联系。点击页面中的“下一步”即可跳转至下一页面。\n
+      4、点击“完善信息”的选项，可以完善自己的信息。首次完善信息，填写好信息后，必须点击页面中的“确认”按钮才可以保存您的信息。\n
+      5、点击“交通信息”的选项，可以填写自己的交通信息。\n
+      6、填写框后带有“*”符号的为必填选项，如不填写，不能保存数据。\n
+      7、如果需要修改信息，重新填写需要修改的选项，点击“修改”按钮才可修改数据，点击“下一步”跳转至下一个页面。\n
+      8、如有疑问，请及时联系学校。\n"
+            android:textSize="15dp" />
+        <Button
+            android:id="@+id/button_nextstep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="下一步"
+            android:onClick="nextStep"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+</ScrollView>
